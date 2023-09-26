@@ -1,20 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Vinculacion con Libreria Font Awesome 6.4.2 -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Registrarse - Funkoshop</title>
-    <link rel="stylesheet" href="../css/index.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Vinculacion con Libreria Font Awesome 6.4.2 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Registrarse - Funkoshop</title>
+  <link rel="stylesheet" href="../css/index.css">
 </head>
+
 <body>
-    
-  
+  <header>
+    <nav>
+      <a href="/pages/home.html">
+        <img class="logo-horizontal" src="/images/branding/logo_light_horizontal.svg" alt="logo-horizontal"></a>
+      <ul class="lista-nav">
+        <li><a href="/pages/shop.html">VER TIENDA</a></li>
+        <li><a href="/pages/admin.html">ADMIN</a></li>
+        <li><a href="/pages/home.html">SALIR</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h2>CREA TU CUENTA</h2>
+    <p>Completa el formulario para ser parte del mundo de los Funkos</p>
+    <form>
+      <div class="form-group">
+        <label for="name">Nombre:</label>
+        <input type="text" name="nombre" id="nombre" placeholder="John">
+      </div>
+      </div>
+      <div class="form-group"><label for="apellido">Apellido:</label>
+        <input type="text" name="apellido" id="apellido" placeholder="Doe">
+      </div>
+      <div class="form-group"><label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="Johndoe@correo.com">
+      </div>
+      <div class="form-group"><label for="contraseña">Contraseña:</label>
+        <input class="contra" type="password" name="contraseña" id="contraseña" placeholder=".........">
+      </div>
+      <div class="form-group"><label for="repetir-contraseña">Repita contraseña:</label>
+        <input class="contra" type="password" name="repetir-contraseña" id="repetir-contraseña" placeholder=".........">
+      </div>
+      <div class="boton-y-checkbox">
+        <input class="boton-registrar" type="submit" value="Registrar">
+        <div class="checkbox">
+          <input type="checkbox" name="terminos" id="terminos">
+          <label class="terminos" for="terminos">Acepto <a href="#">Términos y Condiciones</a></label>
+        </div>
+      </div>
+    </form>
+  </main>
+  <footer>
+    <div class="contenedor-footer">
+      <ul class="lista-footer">
+        <li><a href="/pages/shop.html">SHOP</a></li>
+        <li><a href="/pages/register.html">REGISTRARSE</a></li>
+        <li><a href="/pages/login.html">INGRESAR</a></li>
+        <li><a href="#">CONTACTO</a></li>
+      </ul>
+      <picture>
+        <img class="logo-isotipo" src="/images/branding/isotype.svg" alt="logo isotipo">
+      </picture>
+    </div>
+    <p class="derechos">All rights reserved 2022 - Funkoshop &copy;</p>
+  </footer>
 
-
-    
-    <!-- Vinculacion con Libreria Iconify 1.0.7 -->
-    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
+  <!-- Vinculacion con Libreria Iconify 1.0.7 -->
+  <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
 </body>
+
 </html>

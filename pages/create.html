@@ -9,7 +9,136 @@
     <link rel="stylesheet" href="../css/index.css">
 </head>
 <body>
-    
+    <header>
+        <nav class="navbar container">
+           <picture class="navbar__logo ">
+              <a href="../index.html">
+                 <img src="../images/branding/logo_light_horizontal.svg" alt="Isologotipo de la marca Funko">
+              </a>
+           </picture>
+           <ul class="navbar__menu ">
+              <li class="navbar__item with-submenu">
+                 <a class="navbar__link with-icon" href="../pages/shop.html">VER TIENDA<iconify-icon icon="tabler:chevron-down"></iconify-icon></a>
+                 <ul class="submenu">
+                    <li class="submenu__item">
+                       <a href="#" class="submenu__link">Funkos</a>
+                    </li>
+                    <li class="submenu__item">
+                       <a href="#" class="submenu__link">Remeras</a>
+                    </li>
+                    <li class="submenu__item">
+                       <a href="#" class="submenu__link">Llaveros</a>
+                    </li>
+                 </ul>
+              </li>
+              <li class="navbar__item"> 
+                 <a class="navbar__link" href="#">ADMIN</a>
+              </li>
+              <li class="navbar__item">
+                 <a class="navbar__link" href="../pages/login.html">
+              </li>
+           </ul>
+        </nav>
+   </header>
+   <main>
+     <section class="create container">
+        <article class="create_form" >
+           <h1 class="create_form__title">CREAR NUEVO ITEM</h1>
+           
+           <form action="">
+              <div class="create_form__row">
+                 <div class="create_form__select">
+                    <label for="categoria">Categoría</label>
+                    <select #row_one name="categoria" id="categoria">
+                       <option value="" disabled selected>Seleccionar</option>
+                       <option value="1">STAR WARS</option>
+                       <option value="2">POKEMON</option>
+                       <option value="3">HARRY POTTER</option>
+                    </select>
+                               
+                    <label for="licencia">Licencia</label>
+                    <select name="licencia" id="licencia">
+                       <option value="" disabled selected>Seleccionar</option>
+                       <option value="1">xxx</option>
+                       <option value="2">xxx</option>
+                       <option value="3">xxx</option>
+                    </select>
+                 </div>
+              </div>
+              <div class="create_form__input">
+                 <label for="nombre_producto">Nombre del producto:</label>
+                 <input type="text" name="nombre_producto" id="nombre_producto">
+              </div>
+              <div class="create_form__textarea">
+                 <textarea name="comentario" rows="10" cols="40" placeholder="Descripción del producto"></textarea>
+              </div>
+              <div class="create_form__row">
+                 <div class="create_form__input">
+                    <label for="sku">SKU:</label>
+                    <input type="text" name="sku" id="sku">
+                 </div>
+                 <div class="create_form__input">
+                    <label for="precio">Precio:</label>
+                    <input type="text" name="precio" id="precio">
+                 </div>
+                 <div class="create_form__input">
+                 <label for="stock">Stock:</label>
+                 <input type="number" name="stock" id="stock">
+                 </div>
+              </div>
+              <div class="create_form__row">
+                 <div class="create_form__input">
+                    <label for="descuento">Descuento:</label>
+                    <input type="number" name="descuento" id="descuento">
+                 </div>
+                 <div class="create_form__select">
+                    <label for="cuotas">Cuotas:</label>
+                    <select name="cuotas" id="cuotas">
+                       <option value="">3 Cuotas sin interés</option>
+                       <option value=""></option>
+                    </select>
+                 </div>
+              </div>
+              <div class="create_form__imagenes">
+                 <label for="imagenes_producto">Imágenes:</label>
+                 <input type="file" name="imagenes_producto" id="imagenes_producto">
+              </div>
+            <div class="action__buttons">
+               <button>Agregar Producto</button>
+               <button>Limpiar</button>
+            </div>
+           </form>
+        </article>
+     </section>
+   </main>
+   <footer>
+     <section class="container">
+        <nav class="nav_footer__container">
+           <ul class="nav_footer__menu" >
+              <li>
+               <a class= "navbar__link" href="../pages/shop.html">SHOP</a>
+              </li>
+              <li>
+               <a class= "navbar__link" href="../pages/register.html">REGISTRARSE</a>
+              </li>
+              <li>
+               <a class= "navbar__link" href="../pages/login.html">LOGIN</a>
+              </li>
+              <li>
+               <a class= "navbar__link" href="#">CONTACTO</a>
+              </li>
+           </ul>
+           <div class="footer_logo">
+           <picture >
+              <img src="../images/branding/isotype.svg" alt="Isotipo de la marca Funkoshop">
+           </picture>
+           </div>
+        </nav>
+        <div class="note_footer">
+         <p>All rights reserved 2023 - Funkoshop &copy;</p>
+        </div>
+     </section>
+  </footer>
   
 
 
