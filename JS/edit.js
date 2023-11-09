@@ -1,4 +1,6 @@
-
+// Crear una variable para guardar el id del producto seleccionado por el usuario
+let url = new URL(window.location.href); 
+const productIdSelected = url.searchParams.get('id');
 // Array de muestra para generar el contenido
 const productos = [
     {
@@ -46,9 +48,7 @@ const productos = [
         img_preview__dorso: "../images/harry-potter/snape-patronus-box.webp"
     },
 ];
- // Crear una variable para guardar el id del producto seleccionado por el usuario
- let url = new URL(window.location.href); 
- const productIdSelected = url.searchParams.get('id');
+ 
 // Primero nos aseguramos que todos los elementos HTML esten disponibles para ser manipulados con "DOMContentLoaded"
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -81,11 +81,14 @@ let modificarProducto = document.getElementById('modificar_producto');
 
 //ESCUCHAR EL CLICK DEL BOTON MODIFICAR PRODUCTO Y DEFINIR LA FUNCION PARA CAPTURAR NUEVOS VALORES DEL FORMULARIO
 
-modificarProducto.addEventListener('click', function() {
-   
+modificarProducto.addEventListener('click', function(event) {
+
+    event.preventDefault();
+    
+    console.log('Ejecutando event click');
+
     function capture_changes() {
     
-    console.log('Ejecutando capture_changes');
     
     let nombreProducto = document.getElementById('nombre_producto').value;
     let comentario = document.getElementById('comentario').value;
