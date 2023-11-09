@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirección con parámetro</title>
+</head>
+<body>
+
+    <h1>Redirección con parámetro</h1>
+
+    <!-- Botón de redirección -->
+    <button onclick="redirigir()">Ir a edit.html con parámetro</button>
+
+    <script>
+        // Función para redirigir con el parámetro
+        function redirigir() {
+            // Supongamos que product.id es 123, puedes cambiar este valor según tus necesidades
+            var productId = '1';
+
+            // Redireccionar a edit.html con el parámetro product.id
+            window.location.href = 'edit.html?id=' + productId;
+        }
+    </script>
+
+</body>
+</html>

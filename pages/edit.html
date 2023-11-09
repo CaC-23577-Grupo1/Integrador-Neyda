@@ -44,23 +44,23 @@
          <section class="edit container">
             <article class="edit_form">
                <h1 class="edit_form__title" >EDITAR ITEM</h1>
-               <form action="">
+               <form id="edit_form" action="" method="" enctype="">
                   <div class="edit_form__row">
                      <div class="edit_form__select">
                            <label for="categoria">Categoría:</label>
                            <select name="categoria" id="categoria">
                               <!--<option value="" disabled selected>Seleccionar</option>-->
-                              <option value="1">Figura</option>
-                              <option value="2">Figura</option>
-                              <option value="3">Figura</option>
+                              <option value="starWars">STAR WARS</option>
+                              <option value="pokemon">POKEMON</option>
+                              <option value="harryPotter">HARRY POTTER</option>
                            </select>
                           
                            <label for="licencia">Licencia:</label>
                            <select name="licencia" id="licencia">
                               <!--<option value="" disabled selected>Seleccionar</option>-->
-                              <option value="1">STAR WARS</option>
-                              <option value="2">POKEMON</option>
-                              <option value="3">HARRY POTTER</option>
+                              <option value="starWarsLicense">The Mandalorian Saga</option>
+                              <option value="pokemonLicense">POKEMON</option>
+                              <option value="harryPotterLicense">HARRY POTTER</option>
                            </select>
                      </div>
                   </div>
@@ -70,7 +70,7 @@
                      <input type="text" name="nombre_producto" id="nombre_producto">
                   </div>
                   <div class="edit_form__textarea">
-                     <textarea name="comentario" rows="10" cols="40" placeholder="Descripción del producto"></textarea>
+                     <textarea type="" id="comentario" name="comentario" rows="10" cols="40" placeholder="Descripción del producto"></textarea>
                   </div>
                   <div class="edit_form__row">
                      <div class="edit_form__input">
@@ -88,14 +88,15 @@
                   </div>
                   <div class="edit_form__row">
                      <div class="edit_form__input">
-                        <label for="descuento">Descuento:</label>
+                        <label for="descuento">Descuento(%):</label>
                         <input type="number" name="descuento" id="descuento">
                      </div>
                      <div class="edit_form__select">
                         <label for="cuotas">Cuotas:</label>
                         <select name="cuotas" id="cuotas">
-                           <option value="">6 Cuotas sin interés</option>
-                           <option value=""></option>
+                           <option value="0">Sin Cuotas</option>
+                           <option value="3">3 Cuotas sin interés</option>
+                           <option value="6">6 Cuotas sin interés</option>
                         </select>
                      </div>
                   </div>
@@ -106,10 +107,10 @@
                      </div>
                      <div class="img-preview_grid">
                         <picture>
-                        <img id="img-preview__frente" src="../images/harry-potter/snape-patronus-1.webp" alt="Imagen del frente del producto" >
+                        <img id="img_preview__frente" src="../images/harry-potter/snape-patronus-1.webp" alt="Imagen del frente del producto" >
                         </picture>
                         <picture>
-                        <img id="img-preview__dorso" src="../images/harry-potter/snape-patronus-box.webp" alt="Imagen del dorso del producto">
+                        <img id="img_preview__dorso" src="../images/harry-potter/snape-patronus-box.webp" alt="Imagen del dorso del producto">
                         </picture>
                         <div class="label-line-top">
                         <p class="label">Frente</p>
@@ -119,7 +120,7 @@
                         </div>
                      </div>
                   </div>
-                  <button type="submit">Modificar Producto</button>
+                  <button id="modificar_producto" type="submit" >Modificar Producto</button>
                </form>
          </section>
       </main>
@@ -152,6 +153,7 @@
         </section>
        
     </footer>
+    <script src="../JS/edit.js"></script>
     
     <!-- Vinculacion con Libreria Iconify 1.0.7 -->
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
